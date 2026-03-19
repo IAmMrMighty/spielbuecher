@@ -3,7 +3,7 @@
   hosts: all
 
 vars_files:
-  - 01_softwarelist.yaml
+  - 01_softwarelist.vars
 
 tasks:
   - name: Install software sequentially
