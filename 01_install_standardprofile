@@ -1,0 +1,13 @@
+---
+- name: Standard profile installation
+  hosts: all
+
+vars_files:
+  - 01_softwarelist.yaml
+
+tasks:
+  - name: Install software sequentially
+    chocolatey.chocolatey.win_chocolatey:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop: "{{ choco_packages }}"
