@@ -1,6 +1,8 @@
 ---
 - name: Connectiontest
+  hosts: all
 
   tasks:
   - name: Test Connection to Host
     win_shell: ping 1.1.1.1
+    
