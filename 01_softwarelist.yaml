@@ -1,0 +1,15 @@
+choco_packages:
+  - name: notepadplusplus
+    state: present
+  - name: Office365Business
+    state: present
+  - name: PDFCreator
+    state: present
+  - name: snagit
+    state: present
+  - name: 7zip
+    state: present
+  - name: teamviewer
+    state: present
+  - name: putty.install
+    state: present
